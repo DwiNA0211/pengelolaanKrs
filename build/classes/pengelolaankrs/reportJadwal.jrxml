@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e223cf1f-2629-46d7-b617-4f67796583fb">
+	<property name="ireport.zoom" value="1.7715610000000013"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select*from tb_jadwal]]>
+	</queryString>
+	<field name="kode_jadwal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="makul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dosen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kelas" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="semester" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jam" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hari" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="104" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="62" width="555" height="20" uuid="582a5cae-0688-4fb0-adf9-b6bbc7cbf25b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Dosen pengampu]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="555" height="20" uuid="e7490a3d-0b38-4241-a9a1-dcc47aac3fe0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[KETERANGAN]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="36" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="77" height="20" uuid="af6ebe79-2563-41ac-923e-11245006c568"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="77" y="0" width="105" height="20" uuid="4f2b9120-8e80-43b6-b989-c9095f896470"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="182" y="0" width="127" height="20" uuid="f4ebacfd-286f-4ec0-bf67-86400b5fec36"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="0" width="50" height="20" uuid="8452ff54-5aa9-4d62-8c8a-8d451fa39b39"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="359" y="0" width="78" height="20" uuid="29233c99-6d87-49b1-bbc3-a36e75d543e0"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="437" y="0" width="54" height="20" uuid="27ee279e-bd8d-4073-ba7a-bacc0b2e1746"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="491" y="0" width="64" height="20" uuid="2f9d9bb8-5af2-421b-b450-c0bacbc02a79"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="1" width="77" height="20" uuid="adf50ffa-5bfb-4384-a0a5-071221cf7fe3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[kode_jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="77" y="0" width="105" height="20" uuid="88e4d975-f792-48e5-a01a-2369630feacc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[makul]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="182" y="0" width="127" height="20" uuid="5dd92620-a2fd-4c59-a137-f48198927e1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[dosen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="309" y="1" width="50" height="20" uuid="0b30e5b0-fb0f-4bf4-9d91-5ae7d89467b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="359" y="1" width="78" height="20" uuid="40a61f97-9dc5-47ab-a0f8-670f5006a171"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[semester]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="437" y="1" width="54" height="20" uuid="7d1a817a-156a-402a-aef9-f5f0d1cbd265"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[jam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="1" width="64" height="20" uuid="61c58e1a-a13c-496b-860b-5e5be4cbf498"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" isBold="true"/>
+				</textElement>
+				<text><![CDATA[hari]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="77" height="20" uuid="19f6c818-b4bf-49e3-8f43-d1457b71b264"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="77" y="0" width="105" height="20" uuid="220ab5e3-a169-41e7-89d3-7e5b339e6a35"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="182" y="0" width="127" height="20" uuid="d402e812-b670-44c3-914c-5e2646c3b2bb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="309" y="0" width="50" height="20" uuid="2a90e9e8-143e-483e-a25d-9e110bac2ac1"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="359" y="0" width="78" height="20" uuid="965618e5-2d43-4592-811b-bb0807c2aee2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="437" y="0" width="54" height="20" uuid="5ac88d23-4c00-4688-a173-d3bd7988b824"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="491" y="0" width="64" height="20" uuid="47ad108d-02b5-41b7-9e14-bcde52dce41c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="77" height="20" uuid="8d5c7bd4-9751-44b1-8ab7-63e09e9e8750"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kode_jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="77" y="0" width="105" height="20" uuid="28c2ede9-f1c1-4a44-a1cd-86ecd47670e0"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{makul}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="182" y="0" width="127" height="20" uuid="13b86ed4-13de-4e20-824f-0015ac98dbf8"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dosen}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="309" y="0" width="50" height="20" uuid="de073bec-ac58-48f1-87fc-53eac8513acb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="359" y="0" width="78" height="20" uuid="521a02b0-f0ab-4423-8599-a5e0b0a15c54"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{semester}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="437" y="0" width="54" height="20" uuid="2b55c05d-0df8-406e-84cf-2ac4d181fd18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jam}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="0" width="64" height="20" uuid="a1533c24-ff1a-4fb5-993e-3668ce6bf1a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hari}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

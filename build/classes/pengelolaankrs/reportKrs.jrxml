@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fbe6e6d5-679c-4067-84f2-8010ff828ebd">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="npm" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select*from tb_krs where npm = $P{npm}]]>
+	</queryString>
+	<field name="id_krs" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="npm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_jadwal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tahun_ajar" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dosen" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Semester" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="makul" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="35" width="555" height="20" uuid="de389446-82ce-4aec-8b0d-59c6ad4ddf50"/>
+				<textElement textAlignment="Center">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[KRS]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="65" width="555" height="1" uuid="8fff9276-e164-4701-8b2d-3d7fb11e6ae8"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="62" splitType="Stretch">
+			<textField>
+				<reportElement x="58" y="8" width="100" height="20" uuid="033be597-fccf-48eb-9cc5-01f98a179376"/>
+				<textFieldExpression><![CDATA[$F{npm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="8" width="100" height="20" uuid="ac1c57f5-59e9-459d-8012-8ee2c43533b7"/>
+				<textFieldExpression><![CDATA[$F{tahun_ajar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="58" y="28" width="100" height="20" uuid="9e0b9e4f-ab06-49d6-880f-9a026cf35296"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="23" y="28" width="35" height="20" uuid="a877ee8a-4de4-4cb6-bcc5-05f35ff518ca"/>
+				<text><![CDATA[Nama:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="23" y="8" width="35" height="20" uuid="bc518783-dabc-43da-8c25-44141cee838f"/>
+				<text><![CDATA[NPM:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="365" y="8" width="35" height="20" uuid="ec428c48-9d61-4eeb-868c-2ebf1355ed51"/>
+				<text><![CDATA[Tahun: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="56" width="555" height="1" uuid="b76ffed4-5fa5-4ebf-946e-8a9552158990"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="22" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="1" width="87" height="20" uuid="9d8a4b9e-d90a-4b26-8ca4-69ee459f1300"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="87" y="1" width="148" height="20" uuid="f6fd6e52-3b2d-4438-a464-f313139838a7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="235" y="1" width="206" height="20" uuid="3a2cb0c4-c869-416d-879e-aae9a193dd5e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="1" width="114" height="20" uuid="73441a01-5cd4-4ea4-a721-339b2c2bd37e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="2" width="87" height="20" uuid="fc935eb4-27c8-400b-b383-e24580a5d295"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="87" y="2" width="148" height="20" uuid="50b4bdbc-b95e-4e1e-861a-8a761d3b4091"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Matakuliah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="2" width="206" height="20" uuid="2708d36e-7ddb-402d-b43c-81dfc88ac89b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Dosen]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="2" width="114" height="20" uuid="febebc1f-cfa1-4396-962d-7a77c7155ab8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Semester]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<rectangle>
+				<reportElement x="87" y="0" width="148" height="20" uuid="aa9df80f-cead-4d18-ab19-b439e592c717"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="235" y="0" width="206" height="20" uuid="58f0c91b-7049-4fc3-99e5-fb4e52d649ac"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="441" y="0" width="114" height="20" uuid="90da93e8-c871-4f7a-a05d-9676d581a2f9"/>
+			</rectangle>
+			<textField>
+				<reportElement x="441" y="0" width="114" height="20" uuid="845bb643-d7ce-4b75-8a8e-784aed27cf35"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Semester}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="235" y="0" width="206" height="20" uuid="348f86cf-ce84-4178-888c-933d472b23d9"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{dosen}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="0" width="87" height="20" uuid="8565d823-5c68-478f-809a-f8f3bb8e9b74"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="87" height="20" uuid="eed71036-37d1-49df-aa76-adaeae0b58a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_krs}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="87" y="0" width="148" height="20" uuid="6b4997d4-e925-4e2c-b17b-d0262cc545ef"/>
+				<box leftPadding="3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{makul}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
